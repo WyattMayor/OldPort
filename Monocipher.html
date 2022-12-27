@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monocipher</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <h1 style=text-align: center>
+      <div style="text-align:center"><button class="btn btn-primary" onclick="window.location = 'index.html';">Home</button></div>  Monocipher 
+</h1>
+  <body>
+    <h3>Project Introduction</h3>
+        <p> This project was for my Data structures and Algorithms class. In this project, we created a command-line program using python. This program can encrypt and decrypt text with a simple alphabet key. Key generation is also a feature that is offered. Key generation can be done with a regular alphabet and shifted/reversed or the user can insert a keyword before shifting and reversing. The final feature that I implemented in this program was the ability to do single and multi-letter frequency analyses. The English language uses certain three letter, two letter, and single-letter words more often than other words. Frequency analysis can help the user figure out where they might be placed.</p>
+      <h3>Language Used</h3>
+        <p>Python</p>
+      <h3>Link To Code</h3>
+      <p>Coming Soon...</p>
+      <h3>Usuage</h3>
+      <p>*****************MonoCipher*****************
+
+<br>Decipher(-d):
+<br>Command Line Usage: python3 monocipher.py -d cipher.txt key.txt plain.txt
+<br>-d will Decipher an encrypted text with a given key and then output a file with the decrypted text
+<br>
+<br>Encryption(-e):
+<br>Command Line Usage: python3 monocipher.py -e plain.txt key.txt cipher.txt
+<br>-e will Encrypt text with a given key and output the excrypted text file.  
+<br>
+<br>Key Generation(-k):
+<br>Command Line Usage: python3 monocipher.py -k key.txt -r
+<br>Command Line Usage: python3 monocipher.py -k key.txt -s
+<br>Command Line Usage: python3 monocipher.py -k key.txt -s 4
+<br>Command Line Usage: python3 monocipher.py -k key.txt -r -s 4
+<br>Command Line Usage: python3 monocipher.py -k key.txt -r -s -4
+<br>-k will generate a key for encryption. using -k then follow by a -r will create a reversed key. -k followed by -s will shift the key to the right by a specified number if there is not a specified number then it will shift 1 by default. If you want to shift left the input needs to be positive if you want to shift right the input after -s needs to be negative.
+<br>
+<br>Key Generation With Keyword(-k), (-kw):
+<br>Command Line Usage: python3 monocipher.py -k key.txt -kw "keyword" -r
+<br>Command Line Usage: python3 monocipher.py -k key.txt -kw "keyword" -s
+<br>Command Line Usage: python3 monocipher.py -k key.txt -kw "keyword" -s 4
+<br>Command Line Usage: python3 monocipher.py -k key.txt -kw "keyword" -r -s 4
+<br>Command Line Usage: python3 monocipher.py -k key.txt -kw "keyword" -r -s -4
+<br>-k will generate a key for encryption. -kw will then insert a keyword at the beginning of the key. using -k then follow by a -r will create a reversed key. -k followed by -s will shift the key to the right by a specified number if there is not a specified number then it will shift 1 by default. If you want to shift left the input needs to be positive if you want to shift right the input after -s needs to be negative.
+<br>
+<br>Frequency Analysis(-a):
+<br>Command Line Usage: python3 monocipher.py -a cipher.txt Analysis.txt
+<br>-a will do a single letter frequency analysis on the cipher text and write it to the second text file that was specified.
+<br>
+<br>Multiple Letter Frequency Analysis(-a):
+<br>Command Line Usage: python3 monocipher.py -a 2 cipher.txt Analysis.txt
+<br>Command Line Usage: python3 monocipher.py -a 3 cipher.txt Analysis.txt
+<br>-a followed by another number will do a multiple  letter frequency analysis on the cipher text and write it to the second text file that was specified.</p>
+	<script src="index.js"></script>
+  </body>
+</html>
